@@ -25,6 +25,17 @@ Track Cat is an finance tracking app for Windows, written in C# .NET 8.0 and dev
 4. Press Enter-Key again
 5. Repeat :3
 
+### Beside the Edit/Delete Buttons you can also use this
+
+#### Remove transactions:
+1. Select desired transaciton from transaction list
+2. Press DEL-Key
+
+### Edit transactions:
+1. Double-Click transaction in transaction list
+2. Set new parameter
+3. Press Enter-Key
+
 
 ## Screenshot
 
