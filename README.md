@@ -52,7 +52,7 @@ We welcome contributions from everyone! Here's how you can help:
 4. Push to the branch: `git push origin feature/YourFeatureName`.
 5. Submit a pull request.
 
-Please make sure your contributions adhere to our [CODE_OF_CONDUCT.md](
+Please make sure your contributions adhere to our [Code of Conduct](CODE_OF_CONDUCT.md)
 
 
 ## License
