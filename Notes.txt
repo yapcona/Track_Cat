@@ -1,0 +1,22 @@
+to do:
+
+x enter == add transaction
+x as soon cursor in textbox desc/amount no text
+x after enter pressed in amount, cursor go to desc. textbox
+x transaction color red/green
+x allow user to choose euro/dollar
+x always show a euro/dollar sign next to transactions
+x show total amount (without names, just the number in color)
+x dark theme
+x fix color bug (it's not red/green since darktheme :c )
+x cute cats everywhere :3
+x safe transactions till next start
+
+
+- add a custom tagging system. user can add tags to transactions and filter them by tags
+- monthly clear, safe whole list (all transactions, income total, expenses total, total total) in a txt file (maybe inside the app self)
+	- database integration?
+- bills safe (one time payments, monthly accuring payments, yearly accuring payments)
+- goals (how much money you want to save, how much you want to spend)
+- cute ascii cat which reminds you to keep your finances on eye
+- miku miku eastereggs

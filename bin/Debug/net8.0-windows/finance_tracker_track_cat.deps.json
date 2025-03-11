@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "finance_tracker_track_cat/1.0.0": {
+        "runtime": {
+          "finance_tracker_track_cat.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "finance_tracker_track_cat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
