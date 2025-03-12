@@ -57,4 +57,4 @@ Please make sure your contributions adhere to our [Code of Conduct](CODE_OF_COND
 
 ## License
 
-This project is licensed under the MIT License – see the [LICENSE] file for details.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE.md) file for details.
