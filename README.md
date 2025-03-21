@@ -39,7 +39,7 @@ Track Cat is an finance tracking app for Windows, written in C# .NET 8.0 and dev
 
 ## Screenshot
 
-![Screenshot 2025-02-06 120112](https://github.com/user-attachments/assets/2b9f943c-5d50-4839-88b4-ee521aa885e8)
+![image](https://github.com/user-attachments/assets/a6de32c5-8440-4908-a439-50a7cdef2774)
 
 
 ## Contributing
