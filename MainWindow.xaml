@@ -74,6 +74,7 @@
                 <ComboBoxItem Content="Euro" IsSelected="True"/>
                 <ComboBoxItem Content="Dollar"/>
             </ComboBox>
+			
             <TextBlock x:Name="ChangeCurrencyTitle" HorizontalAlignment="Left" Margin="511,310,0,0" TextWrapping="Wrap" Text="Change Currency" VerticalAlignment="Top" FontFamily="Share Tech Mono" Width="98" Grid.Column="1"/>
 
             <!-- tag input box -->

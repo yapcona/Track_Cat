@@ -32,7 +32,7 @@ namespace finance_tracker_track_cat
 
         private void IncomeTextBoxTextChanged(object sender, TextChangedEventArgs e)
         {
-            // ignore. code won't work without it xD
+            // ignore. code won't work without it xD if you know why, please let me know
         }
 
         private void AddIncomeClick(object sender, RoutedEventArgs e)
@@ -96,7 +96,8 @@ namespace finance_tracker_track_cat
             UpdateTotals();
 
             // save transactions to file
-            SaveTransactions();
+            string filePath = @"C:\Users\HAN\Desktop\transactions.json";
+            SaveTransactions(filePath);
         }
 
         private void DeleteTransactionButton_Click(object sender, RoutedEventArgs e)
@@ -116,7 +117,8 @@ namespace finance_tracker_track_cat
             }
 
             // save transaction to file
-            SaveTransactions();
+            string filePath = @"C:\Users\HAN\Desktop\transactions.json";
+            SaveTransactions(filePath);
         }
 
         private void EditTransactionButton_Click(object sender, RoutedEventArgs e)
@@ -244,12 +246,10 @@ namespace finance_tracker_track_cat
             }
         }
 
-
         //////////////////////////// keydown section ////////////////////////////
         private void EditTransaction_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-
-                EditTransactionButton_Click(sender, e);
+            EditTransactionButton_Click(sender, e);
         }
         private void DeleteTransaction_KeyDown(object sender, KeyEventArgs e)
         {
@@ -303,23 +303,22 @@ namespace finance_tracker_track_cat
             }
         }
 
-
-        private void SaveTransactions()
+        private void SaveTransactions(string filePath)
         {
             var transactions = new List<string>();
             foreach (ListBoxItem item in AllTransactionsBox.Items)
             {
                 transactions.Add(item.Content.ToString());
             }
-            File.WriteAllText("transactions.json", JsonSerializer.Serialize(transactions));
+            File.WriteAllText(filePath, JsonSerializer.Serialize(transactions));
         }
-
 
         private void LoadTransactions()
         {
-            if (File.Exists("transactions.json"))
+            string filePath = @"C:\Users\HAN\Desktop\transactions.json";
+            if (File.Exists(filePath))
             {
-                var transactions = JsonSerializer.Deserialize<List<string>>(File.ReadAllText("transactions.json"));
+                var transactions = JsonSerializer.Deserialize<List<string>>(File.ReadAllText(filePath));
                 foreach (var transaction in transactions)
                 {
                     var item = new ListBoxItem { Content = transaction };
@@ -332,14 +331,6 @@ namespace finance_tracker_track_cat
                 }
             }
         }
-
-
-
-
-
-
-
-
 
         // show information of transaction
         private void AllTransactionsBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
